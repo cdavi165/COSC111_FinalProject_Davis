@@ -84,8 +84,8 @@ public class Davis_Final {
                 Descriptions();
             }
 
-            System.out.println(); // Blank line for spacing
-        } while (true); // Loops indefinitely, remove Exit if desired
+            System.out.println();
+        } while (true);
         kb.close();
     }
 
