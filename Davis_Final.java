@@ -8,9 +8,6 @@ package COSC111_FinalProject_Davis;
 import java.util.Scanner;
 
 public class Davis_Final {
-    private static Test test = new Test();
-    private static int lastScore = 0; // store last completed or partial score
-
     /**
      * printMenu() prints the menu options for the user
      */
@@ -86,7 +83,6 @@ public class Davis_Final {
 
             System.out.println();
         } while (true);
-        kb.close();
-    }
 
+    }
 }
