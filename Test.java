@@ -1,5 +1,10 @@
 package COSC111_FinalProject_Davis;
 
+/**
+ * 
+ * @author Cayden Davis
+ * @version 12/12/2025
+ */
 import java.util.Scanner;
 
 public class Test {
@@ -38,8 +43,7 @@ public class Test {
                         score += q.getChoices()[choice - 1].getScore();
                 }
 
-                System.out.println("\nTest complete! Your total score is: " + score);
-                printPersonalityType(score);
+                printPersonalityType(score); // Prints personality type after test
 
                 return score;
         }
@@ -90,147 +94,184 @@ public class Test {
         // Builds all 16 questions
         private void buildQuestions() {
                 questions[0] = new Question(
-                                "1. Question",
+                                "People may describe you as: ",
                                 new AnswerChoices[] {
-                                                new AnswerChoices("Choice 1", 1),
-                                                new AnswerChoices("Choice 2", 2),
-                                                new AnswerChoices("Choice 3", 3),
-                                                new AnswerChoices("Choice 4", 4)
+                                                new AnswerChoices("Enthusiastic and optimistic.", 1),
+                                                new AnswerChoices("Analytical and private.", 2),
+                                                new AnswerChoices("Driven and motivated.", 3),
+                                                new AnswerChoices("Laid-back and accommodating.", 4)
                                 });
 
                 questions[1] = new Question(
-                                "2. Question",
+                                "When dealing with conflict you: ",
                                 new AnswerChoices[] {
-                                                new AnswerChoices("Choice 1", 1),
-                                                new AnswerChoices("Choice 2", 2),
-                                                new AnswerChoices("Choice 3", 3),
-                                                new AnswerChoices("Choice 4", 4)
+                                                new AnswerChoices("Try to resolve it.", 1),
+                                                new AnswerChoices("Withdraw to avoid anxiety.", 2),
+                                                new AnswerChoices("Argue my own side vehemently.", 3),
+                                                new AnswerChoices("Try not to get involved.", 4)
                                 });
 
                 questions[2] = new Question(
-                                "3. Question",
+                                "You make decisions based on: ",
                                 new AnswerChoices[] {
-                                                new AnswerChoices("Choice 1", 1),
-                                                new AnswerChoices("Choice 2", 2),
-                                                new AnswerChoices("Choice 3", 3),
-                                                new AnswerChoices("Choice 4", 4)
+                                                new AnswerChoices("Personal feelings at the moment", 1),
+                                                new AnswerChoices("Carefully assessing options.", 2),
+                                                new AnswerChoices(
+                                                                "Whatever produces results in the most efficient manner.",
+                                                                3),
+                                                new AnswerChoices("Whichever choice maintains my peace.", 4)
                                 });
 
                 questions[3] = new Question(
-                                "4. Question",
+                                "Your biggest strengths are: ",
                                 new AnswerChoices[] {
-                                                new AnswerChoices("Choice 1", 1),
-                                                new AnswerChoices("Choice 2", 2),
-                                                new AnswerChoices("Choice 3", 3),
-                                                new AnswerChoices("Choice 4", 4)
+                                                new AnswerChoices("Bringing joy and energy to friends.", 1),
+                                                new AnswerChoices("Attention to detail and analysis.", 2),
+                                                new AnswerChoices("Leadership and perserverance.", 3),
+                                                new AnswerChoices("Patience and loyalty.", 4)
                                 });
 
                 questions[4] = new Question(
-                                "5. Question",
+                                "Your biggest weaknesses are: ",
                                 new AnswerChoices[] {
-                                                new AnswerChoices("Choice 1", 1),
-                                                new AnswerChoices("Choice 2", 2),
-                                                new AnswerChoices("Choice 3", 3),
-                                                new AnswerChoices("Choice 4", 4)
+                                                new AnswerChoices("Staying focused and impulsivity.", 1),
+                                                new AnswerChoices("Overthinking and anxiety.", 2),
+                                                new AnswerChoices("Being controlling and instense.", 3),
+                                                new AnswerChoices("Indecisiveness and passivity.", 4)
                                 });
 
                 questions[5] = new Question(
-                                "6. Question",
+                                "When criticized, you: ",
                                 new AnswerChoices[] {
-                                                new AnswerChoices("Choice 1", 1),
-                                                new AnswerChoices("Choice 2", 2),
-                                                new AnswerChoices("Choice 3", 3),
-                                                new AnswerChoices("Choice 4", 4)
+                                                new AnswerChoices("Brush it off and stay optimistic.", 1),
+                                                new AnswerChoices("Take it as an insult and reflect on it.", 2),
+                                                new AnswerChoices("Defend yourself to disprove the criticism.", 3),
+                                                new AnswerChoices("Accept it and live it off.", 4)
                                 });
 
                 questions[6] = new Question(
-                                "7. Question",
+                                "If you have to learn something new, you: ",
                                 new AnswerChoices[] {
-                                                new AnswerChoices("Choice 1", 1),
-                                                new AnswerChoices("Choice 2", 2),
-                                                new AnswerChoices("Choice 3", 3),
-                                                new AnswerChoices("Choice 4", 4)
+                                                new AnswerChoices(
+                                                                "Try to put new information into practice immediately.",
+                                                                1),
+                                                new AnswerChoices(
+                                                                "Carefully study and research to gain a full understanding.",
+                                                                2),
+                                                new AnswerChoices(
+                                                                "Try to master the new skill as efficiently as possible.",
+                                                                3),
+                                                new AnswerChoices("Move at your own pace to learn it.", 4)
                                 });
 
                 questions[7] = new Question(
-                                "8. Question",
+                                "Your ideal friend group is: ",
                                 new AnswerChoices[] {
-                                                new AnswerChoices("Choice 1", 1),
-                                                new AnswerChoices("Choice 2", 2),
-                                                new AnswerChoices("Choice 3", 3),
-                                                new AnswerChoices("Choice 4", 4)
+                                                new AnswerChoices(
+                                                                "A large, energetic group, that loves adventure and going out.",
+                                                                1),
+                                                new AnswerChoices(
+                                                                "A close-knit circle who have meaningful conversations.",
+                                                                2),
+                                                new AnswerChoices(
+                                                                "A small group that challenge and push each other to be better.",
+                                                                3),
+                                                new AnswerChoices(
+                                                                "A moderately sized group that try to foster long-term, conflict free, relationships.",
+                                                                4)
                                 });
 
                 questions[8] = new Question(
-                                "9. Question",
+                                "You express affection: ",
                                 new AnswerChoices[] {
-                                                new AnswerChoices("Choice 1", 1),
-                                                new AnswerChoices("Choice 2", 2),
-                                                new AnswerChoices("Choice 3", 3),
-                                                new AnswerChoices("Choice 4", 4)
+                                                new AnswerChoices("Openly and playfully.", 1),
+                                                new AnswerChoices("Thoughtfully and considerately.", 2),
+                                                new AnswerChoices("Directly and specific.", 3),
+                                                new AnswerChoices("Gently and supporting.", 4)
                                 });
 
                 questions[9] = new Question(
-                                "10. Question",
+                                "Your plans with a friend to go out were cancelled. You: ",
                                 new AnswerChoices[] {
-                                                new AnswerChoices("Choice 1", 1),
-                                                new AnswerChoices("Choice 2", 2),
-                                                new AnswerChoices("Choice 3", 3),
-                                                new AnswerChoices("Choice 4", 4)
+                                                new AnswerChoices("Reach out to another friend to make plans.", 1),
+                                                new AnswerChoices(
+                                                                "Feel disappointed and think about why it may have happened.",
+                                                                2),
+                                                new AnswerChoices("Request their reasoning and reschedule.", 3),
+                                                new AnswerChoices("Accept it and stay relaxed at home.", 4)
                                 });
 
                 questions[10] = new Question(
-                                "11. Question",
+                                "When you feel angry you: ",
                                 new AnswerChoices[] {
-                                                new AnswerChoices("Choice 1", 1),
-                                                new AnswerChoices("Choice 2", 2),
-                                                new AnswerChoices("Choice 3", 3),
-                                                new AnswerChoices("Choice 4", 4)
+                                                new AnswerChoices("Express it openly and dramatically.", 1),
+                                                new AnswerChoices("Think about what made you so upset.", 2),
+                                                new AnswerChoices("Confront the source and work to manage your anger.",
+                                                                3),
+                                                new AnswerChoices("Suppress it and hope it passes over.", 4)
                                 });
 
                 questions[11] = new Question(
-                                "12. Question",
+                                "When dealing with stress, you: ",
                                 new AnswerChoices[] {
-                                                new AnswerChoices("Choice 1", 1),
-                                                new AnswerChoices("Choice 2", 2),
-                                                new AnswerChoices("Choice 3", 3),
-                                                new AnswerChoices("Choice 4", 4)
+                                                new AnswerChoices(
+                                                                "Distract yourself by going out and doing something fun.",
+                                                                1),
+                                                new AnswerChoices(
+                                                                "Stick to your plans to keep the stress to a minimum.",
+                                                                2),
+                                                new AnswerChoices(
+                                                                "Take care of the stressful situation as quickly as possible.",
+                                                                3),
+                                                new AnswerChoices("Take a break to help reduce stress.", 4)
                                 });
 
                 questions[12] = new Question(
-                                "13. Question",
+                                "Your workspace is: ",
                                 new AnswerChoices[] {
-                                                new AnswerChoices("Choice 1", 1),
-                                                new AnswerChoices("Choice 2", 2),
-                                                new AnswerChoices("Choice 3", 3),
-                                                new AnswerChoices("Choice 4", 4)
+                                                new AnswerChoices("Messy, but colorful and personalized.", 1),
+                                                new AnswerChoices("Neat and organized.", 2),
+                                                new AnswerChoices("Minimal and functional.", 3),
+                                                new AnswerChoices("Anywhere that is convenient.", 4)
                                 });
 
                 questions[13] = new Question(
-                                "14. Question",
+                                "You can not live without: ",
                                 new AnswerChoices[] {
-                                                new AnswerChoices("Choice 1", 1),
-                                                new AnswerChoices("Choice 2", 2),
-                                                new AnswerChoices("Choice 3", 3),
-                                                new AnswerChoices("Choice 4", 4)
+                                                new AnswerChoices("Adventure", 1),
+                                                new AnswerChoices("Structure", 2),
+                                                new AnswerChoices("Purpose", 3),
+                                                new AnswerChoices("Stability", 4)
                                 });
 
                 questions[14] = new Question(
-                                "15. Question",
+                                "You are happiest when: ",
                                 new AnswerChoices[] {
-                                                new AnswerChoices("Choice 1", 1),
-                                                new AnswerChoices("Choice 2", 2),
-                                                new AnswerChoices("Choice 3", 3),
-                                                new AnswerChoices("Choice 4", 4)
+                                                new AnswerChoices(
+                                                                "You are having fun doing what you love with the people you love.",
+                                                                1),
+                                                new AnswerChoices(
+                                                                "You feel understood and you understand the world around you.",
+                                                                2),
+                                                new AnswerChoices("Your goals are being accomplished.", 3),
+                                                new AnswerChoices("Your life feels quiet and calm.", 4)
                                 });
 
                 questions[15] = new Question(
-                                "16. Question",
+                                "You are at a party. You: ",
                                 new AnswerChoices[] {
-                                                new AnswerChoices("Choice 1", 1),
-                                                new AnswerChoices("Choice 2", 2),
-                                                new AnswerChoices("Choice 3", 3),
-                                                new AnswerChoices("Choice 4", 4)
+                                                new AnswerChoices(
+                                                                "Talk to new people, play games, keep the energy high.",
+                                                                1),
+                                                new AnswerChoices(
+                                                                "Stick to the group you came in with and hang out with them.",
+                                                                2),
+                                                new AnswerChoices(
+                                                                "Organize games and challenges for people to partake in.",
+                                                                3),
+                                                new AnswerChoices(
+                                                                "Observe quietly and go along with what everyone else is doing.",
+                                                                4)
                                 });
         }
 }

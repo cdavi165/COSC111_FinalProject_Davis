@@ -1,5 +1,10 @@
 package COSC111_FinalProject_Davis;
 
+/**
+ * 
+ * @author Cayden Davis
+ * @version 12/12/2025
+ */
 public class AnswerChoices {
 
     private String text;
